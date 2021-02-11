@@ -198,6 +198,37 @@ Navbar
   cursor: pointer;
   justify-self: end;
 }
+@media screen and (min-width: 768px) {
+  .nav {
+    background: var(--clr-primary-10);
+  }
+  .nav-btn {
+    display: none;
+  }
+  .nav-links {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    justify-items: center;
+    column-gap: 2rem;
+    /* align-self: center; */
+    justify-items: end;
+  }
+  .nav-links a {
+    color: var(--clr-grey-1);
+    letter-spacing: var(--spacing);
+    text-transform: capitalize;
+    font-weight: bold;
+    transition: var(--transition);
+  }
+  .nav-links a:hover {
+    color: var(--clr-primary-5);
+  }
+  .nav-center {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    align-items: center;
+  }
+}
 
 /*
 =============== 
