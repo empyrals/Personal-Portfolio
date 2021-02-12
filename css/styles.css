@@ -210,7 +210,7 @@ Navbar
     grid-template-columns: repeat(4, 1fr);
     justify-items: center;
     column-gap: 2rem;
-    /* align-self: center; */
+    align-self: center;
     justify-items: end;
   }
   .nav-links a {
