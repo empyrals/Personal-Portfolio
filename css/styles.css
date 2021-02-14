@@ -179,6 +179,17 @@ p {
 Navbar
 ===============
 */
+.nav-logo h2 {
+  color: #222222;
+  text-shadow: 0.1rem 0.25rem 0.18rem var(--clr-grey-8);
+  letter-spacing: 0.5rem;
+  margin-left: 2rem;
+  margin-top: 0.4rem;
+  font-size: 1.8rem;
+}
+.nav-logo span {
+  color: #e9b949;
+}
 .nav-links {
   display: none;
 }
@@ -266,6 +277,7 @@ Sidebar
   /* for later */
   transition: var(--transition);
   transform: translateX(-100%);
+  z-index: 4;
 }
 .show-sidebar {
   transform: translateX(0);
@@ -314,7 +326,9 @@ Sidebar
 .close-btn:hover {
   color: #e66b6b;
 }
-
+.nav-logo img {
+  background: none;
+}
 /*
 =============== 
 Hero
@@ -345,7 +359,7 @@ Hero
 .hero-btn {
   margin-top: 0.5rem;
 }
-@media screen and (min-width: 568px) {
+@media screen and (min-width: 992px) {
   .hero-img {
     display: block;
     position: relative;
@@ -378,6 +392,10 @@ About
 ===============
 */
 /* section title added to globals */
+.about {
+  height: 100vh;
+  background: teal;
+}
 
 /*
 =============== 
