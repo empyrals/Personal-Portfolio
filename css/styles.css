@@ -165,6 +165,15 @@ p {
   }
 }
 
+.underline {
+  width: 5rem;
+  height: 0.25rem;
+  margin-bottom: 1.25rem;
+  margin-left: auto;
+  margin-right: auto;
+  background: var(--clr-primary-5);
+}
+
 /*
 =============== 
 Navbar
@@ -229,6 +238,16 @@ Navbar
     align-items: center;
   }
 }
+/* fixed navbar */
+.navbar-fixed {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: var(--clr-white);
+  z-index: 2;
+  box-shadow: var(--light-shadow);
+}
 
 /*
 =============== 
@@ -246,7 +265,10 @@ Sidebar
   place-items: center;
   /* for later */
   transition: var(--transition);
-  /* transform: translateX(-100%); */
+  transform: translateX(-100%);
+}
+.show-sidebar {
+  transform: translateX(0);
 }
 .sidebar-links {
   text-align: center;
@@ -299,6 +321,30 @@ Hero
 ===============
 */
 /* underline added to globals */
+.hero .underline {
+  margin-bottom: 0.5rem;
+  margin-left: 0;
+}
+.hero-img {
+  display: none;
+}
+.hero {
+  background: var(--clr-primary-10);
+}
+.hero-center {
+  min-height: calc(100vh - 5rem);
+  display: grid;
+  place-items: center;
+}
+.hero-info h4 {
+  color: var(--clr-grey-5);
+}
+.hero-icons {
+  justify-items: start;
+}
+.hero-btn {
+  margin-top: 0.5rem;
+}
 
 /*
 =============== 
