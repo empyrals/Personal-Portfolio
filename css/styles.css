@@ -177,6 +177,9 @@ p {
   margin-bottom: 4rem;
   text-align: center;
 }
+.bg-grey {
+  background: var(--clr-grey-10);
+}
 /*
 =============== 
 Navbar
@@ -401,7 +404,7 @@ Hero
 About
 ===============
 */
-/* sectiontitlel added to globals */
+/* section title added to globals */
 .about-title {
   text-align: left;
   margin-bottom: 2rem;
@@ -446,6 +449,48 @@ Services
 */
 /* small screen layout setup */
 /* bg-grey in globals */
+.service {
+  background: var(--clr-white);
+  padding: 3rem 1.5rem;
+  margin-bottom: 2rem;
+  text-align: center;
+  border-radius: var(--radius);
+  transition: var(--transition);
+}
+.service-icon {
+  font-size: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+.service .underline {
+  width: 2rem;
+  height: 0.12rem;
+  transition: var(--transition);
+}
+.service p {
+  transition: var(--transition);
+}
+.service:hover {
+  background: var(--clr-primary-5);
+  color: var(--clr-white);
+}
+.service:hover p {
+  color: var(--clr-white);
+}
+.service:hover .underline {
+  background-color: var(--clr-white);
+}
+@media screen and (min-width: 676px) {
+  .services-center {
+    display: grid;
+    column-gap: 2rem;
+    grid-template-columns: 1fr 1fr;
+  }
+}
+@media screen and (min-width: 992px) {
+  .services-center {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
 
 /*
 =============== 
